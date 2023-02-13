@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap" rel="stylesheet">
+    <title>Number 9 Game</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+    <body>
+        <div class="box-area">
+            <div class="header">
+                <div class="heading-text">
+                    <h1>Can you solve this problem?</h1>
+                </div>
+                <div class="description-text">
+                    <h2>Use numbers from 1 to 9. <br> Each number can only be used once</h2>
+                </div>
+                <div class="message" id="output">
+                    <h2></h2>
+                </div>
+                <div class="solution-button">
+                    <button type="submit" class="solution" id="show-answer">Show Solution</button>
+                </div> 
+            </div>
+                    <form autocomplete="off" id="game-area">
+                        <div class="game-grid">
+                        <input type="text" id="input-box-one" onkeyup="numberOnly(this)">
+                        <p class="symbol-box">-</p>
+                        <input type="text" id="input-box-two" onkeyup="numberOnly(this)">
+                        <p class="symbol-box">=</p>
+                        <input type="text" id="input-box-three" onkeyup="numberOnly(this)">
+                        <p class="symbol-box"></p>
+                        <p class="symbol-box"></p>
+                        <p class="symbol-box"></p>
+                        <p class="symbol-box"></p>
+                        <p class="symbol-box">*</p>
+                        <input type="text" id="input-box-four" onkeyup="numberOnly(this)">
+                        <p class="symbol-box">/</p>
+                        <input type="text" id="input-box-five" onkeyup="numberOnly(this)">
+                        <p class="symbol-box">=</p>
+                        <input type="text" id="input-box-six" onkeyup="numberOnly(this)">
+                        <p class="symbol-box"></p>
+                        <p class="symbol-box"></p>
+                        <p class="symbol-box"></p>
+                        <p class="symbol-box"></p>
+                        <p class="symbol-box">=</p>
+                        <input type="text" id="input-box-seven" onkeyup="numberOnly(this)">
+                        <p class="symbol-box">+</p>
+                        <input type="text" id="input-box-eight" onkeyup="numberOnly(this)">
+                        <p class="symbol-box">=</p>
+                        <input type="text" id="input-box-nine" onkeyup="numberOnly(this)">
+                        </div>
+                            <div class="submit-button">
+                                <button type="submit" class="button">Submit Answer</button>
+                                <button type="reset" class="button" id="reset">Reset</button>
+                            </div>
+                    </form>
+        </div>
+    </body>
+</html>
